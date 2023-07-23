@@ -2,7 +2,7 @@
 
 # Context
 
-The task at hand involves time series forecasting, where we will be working on predicting store sales using data from Corporation Favorita, a major grocery retailer based in Ecuador. The goal in this project is to develop a model that can provide more precise predictions for the unit sales of various items sold across different Favorita stores.
+The task at hand involves time series forecasting, where we will be working on predicting store sales using data from Corporation Favorita, a major grocery retailer based in Ecuador. The goal in this project is to develop a model that can provide more precise predictions for the unit sales of various items sold across different Favorita stores. 
 
 # Procedure
 
@@ -10,7 +10,7 @@ The document will comprehensively detail the steps and procedures undertaken to 
 
 # Steps
 
-1. **Data Collection**: The Time series sales data utilized in this project is sourced from various provided databases and files, including a SQL Server database, as well as.csv and files. The dataset encompasses valuable details such as store_nbr,family,sales,onpromotion,test.csv,transaction.csv,sample_submission.csv,stores.csv,oil.csv,holidays_events.csv.
+1. **Data Collection**: The Time series sales data utilized in this project is sourced from various provided databases and files, including a SQL Server database consisting of table1,2 and 3, as well as csv files from designated zip files and one drive. The dataset encompasses valuable details such as store_nbr,family,sales,onpromotion,test.csv,transaction.csv,sample_submission.csv,stores.csv,oil.csv,holidays_events.csv.
 2. **Data Loading**: The collected data is loaded into the code and transformed into a suitable format for analysis. The pyodbc package is used to connect to the SQL Server database and fetch data from the a given table. The data from the CSV files is read using the pandas library and concatenated with the SQL data to create a comprehensive dataset.
 3. **Data Evaluation (EDA)**: Exploratory data analysis is performed to gain insights into the dataset. This includes summarizing the data, checking for duplicates, handling missing values, and performing visual analyses using the sarima and adf test to check to spot pattern and trends within the given data. The pandas, numpy, matplotlib, and seaborn libraries are utilized for data manipulation and visualization.
 4. **Data Processing and Engineering**: The dataset undergoes data processing steps to cleanse and preprocess it. These steps involve addressing missing values, transforming categorical variables, and potentially generating new features. Techniques from the pandas library are applied to prepare the dataset for subsequent analysis.
@@ -23,50 +23,65 @@ The document will comprehensively detail the steps and procedures undertaken to 
 
 # Installation
 
-* pyodbc
-* sqlalchemy
-* lightgbm
-* catboost
-* python-dotenv
-* pandas
-* numpy
-* matplotlib
-* seaborn
-* scipy
-* pmdarima
+* [ ] pyodbc
+* [ ] sqlalchemy
+* [ ] lightgbm
+* [ ] catboost
+* [ ] python-dotenv
+* [ ] pandas
+* [ ] numpy
+* [ ] matplotlib
+* [ ] seaborn
+* [ ] scipy
+* [ ] pmdarima
 
 # Packages
 
-* import pyodbc
-* import sqlalchemy as sa
-* import pandas as pd
-* import numpy as np
-* import zipfile
-* import matplotlib.pyplot as plt
-* import seaborn as sns
-* import calendar
-* from sklearn.preprocessing import StandardScaler, OneHotEncoder
-* from sklearn.compose import ColumnTransformer
-* from sklearn.pipeline import Pipeline
-* from statsmodels.tsa.seasonal import seasonal_decompose
-* from statsmodels.tsa.stattools import adfuller
-* from sklearn.model_selection import train_test_split
-* from dotenv import dotenv_values
-* from scipy import stats
-* from lightgbm import LGBMRegressor
-* from statsmodels.tsa.arima.model import ARIMA
-* from statsmodels.tsa.statespace.sarimax import SARIMAX
-* from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
-* from xgboost import XGBRegressor
-* from pmdarima.arima import auto_arima
-* from sklearn.model_selection import GridSearchCV
-* from sklearn.linear_model import LinearRegression
-* from sklearn.svm import SVR
-* from catboost import CatBoostRegressor
-* from sklearn.metrics import mean_absolute_error, mean_squared_error, mean_squared_log_error
-* import warnings
-* warnings.filterwarnings("ignore")
+* [ ] import pyodbc
+* [ ] import sqlalchemy as sa
+* [ ] import pandas as pd
+* [ ] import numpy as np
+* [ ] import zipfile
+* [ ] import matplotlib.pyplot as plt
+* [ ] import seaborn as sns
+* [ ] import calendar
+* [ ] from sklearn.preprocessing import StandardScaler, OneHotEncoder
+* [ ] from sklearn.compose import ColumnTransformer
+* [ ] from sklearn.pipeline import Pipeline
+* [ ] from statsmodels.tsa.seasonal import seasonal_decompose
+* [ ] from statsmodels.tsa.stattools import adfuller
+* [ ] from sklearn.model_selection import train_test_split
+* [ ] from dotenv import dotenv_values
+* [ ] from scipy import stats
+* [ ] from lightgbm import LGBMRegressor
+* [ ] from statsmodels.tsa.arima.model import ARIMA
+* [ ] from statsmodels.tsa.statespace.sarimax import SARIMAX
+* [ ] from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+* [ ] from xgboost import XGBRegressor
+* [ ] from pmdarima.arima import auto_arima
+* [ ] from sklearn.model_selection import GridSearchCV
+* [ ] from sklearn.linear_model import LinearRegression
+* [ ] from sklearn.svm import SVR
+* [ ] from catboost import CatBoostRegressor
+* [ ] from sklearn.metrics import mean_absolute_error, mean_squared_error, mean_squared_log_error
+* [ ] import warnings
+* [ ] warnings.filterwarnings("ignore")
+
+# Authors and Aknowledgement
+
+Below is a table of the initial contributors of the project with their respective Github ID and Articles written to document their individual perspective of the project.
+
+| Project LP3 | Contribitors        | Article Link | Github Profile |
+| ----------- | ------------------- | ------------ | -------------- |
+| 1.          | Israel Anaba Ayamga |              | Israel-Anaba   |
+| 2.          | Isaac Sarpong       |              | IsaacSarpong   |
+| 3.          | Peter Mutwiri       |              | PETERMUTWIRI   |
+| 4.          | Emmanuel Morkeh     |              | Ekmorkeh       |
 
 # Conclusion
 
 In conclusion, this project involves tackling a time series forecasting problem. The utilization of time-dependent data and advanced modeling techniques has enabled us to make accurate predictions and gain valuable insights from the temporal patterns in the dataset. By leveraging the power of time series analysis, we can make informed decisions and effectively plan for the future.
+
+# License
+
+MIT-LICENSE.txt is an open-source software license widely used for distributing and sharing software, code, and other creative works.
